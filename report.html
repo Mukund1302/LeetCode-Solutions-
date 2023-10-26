@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="Submission" content="DA8RVETET9YHF9MKPHWFWOV2T"/>
+<meta name="Time" content="2022-10-12T21:24:22Z"/>
+<meta name="ID" content="Account"/>
+<meta name="User" content="evel-obeb-iver-noze"/>
+<meta name="Problem" content="ext/22100817025cc3bhwr5uroxyk4ww8rd65i4"/>
+<meta name="Elapsed" content="20778 ms"/>
+<style type="text/css">
+.header {font-weight: bold; font-size: 1.2em; }
+.item {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+.note {color: blue; font-weight: bold;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+</head>
+<body>
+<p class="header run">Testing AccountApp.java</p>
+<div class="run">
+<p class="caption">Error:</p>
+<pre class="output">Account.java:1: error: Account is not abstract and does not override abstract method setBalance(double) in Balanceable
+public class Account implements Balanceable, Depositable, Withdrawable {
+       ^
+1 error
+</pre>
+</div>
+<p class="header studentFiles">Submitted files</p>
+<div class="studentFiles">
+<p class="caption">Account.java:</p>
+<pre class="output">public class Account implements Balanceable, Depositable, Withdrawable {
+
+
+}
+</pre>
+<p class="caption">AccountApp.java:</p>
+<pre class="output">import java.util.Scanner;
+
+public class AccountApp {
+    public static void main(String args[]) {
+
+
+    }
+}
+</pre>
+<p class="caption">Balanceable.java:</p>
+<pre class="output">public interface Balanceable {
+   public double getBalance();
+
+public void setBalance(double amount);
+
+
+
+}
+</pre>
+<p class="caption">CheckingAccount.java:</p>
+<pre class="output">public class CheckingAccount extends Account {
+
+
+}
+</pre>
+<p class="caption">Depositable.java:</p>
+<pre class="output">public interface Depositable {
+    public void deposit(double amount);
+}
+</pre>
+<p class="caption">SavingsAccount.java:</p>
+<pre class="output">public class SavingsAccount extends Account {
+
+}
+</pre>
+<p class="caption">Withdrawable.java:</p>
+<pre class="output">public interface Withdrawable {
+    public void withdraw(double amount);
+
+
+
+}
+</pre>
+</div>
+<p class="header score">Score</p>
+<div class="score">
+<p class="score">0</p>
+</div>
+<div class="footnotes"><div class="footnote">2022-10-12T21:24:22Z</div>
+</div>
+</body></html>
